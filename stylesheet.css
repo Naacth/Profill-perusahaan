@@ -1,0 +1,220 @@
+/* Pengaturan umum */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #1c1c1c; /* Abu-abu tua */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: #fdd835; /* Kuning cerah */
+  }
+  
+  header p {
+    color: white;
+    font-size: 18px;
+  }
+  
+  nav {
+    background-color: #fdd835; /* Kuning cerah */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav li {
+    list-style-type: none;
+  }
+  
+  nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav a:hover {
+    font-weight: bold;
+  }
+  
+  /* Dropdown */
+  nav .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  nav .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  nav input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  /* Main Content */
+  main {
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+  }
+  
+  #content {
+    flex: 3;
+  }
+  
+  .produk-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .product-card h3 {
+    color: #f57c00;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on Description and Aside */
+  .card:hover {
+    background-color: #fdd835;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .card:hover h3,
+  .card:hover p {
+    color: #1c1c1c;
+  }
+  
+  .profile:hover {
+    background-color: #fdd835;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Hover pada h2 dan h3 produk dan aside */
+  h2:hover,
+  h3:hover {
+    color: #fdd835;
+    cursor: pointer;
+  }
+  
+  h2:active,
+  h3:active {
+    color: #f57c00; /* Kuning yang lebih gelap saat ditekan */
+  }
+  
+  /* Sidebar */
+  /* Sidebar */
+aside {
+    position: -webkit-sticky; /* Untuk dukungan browser lama */
+    position: sticky; /* Menjadikan aside tetap berada di posisi tetap saat di-scroll */
+    top: 20px; /* Jarak dari atas */
+    flex: 1;
+    max-height: 100vh; /* Membatasi tinggi agar tidak melampaui layar */
+    overflow-y: auto; /* Membuat konten di aside bisa di-scroll jika melebihi tinggi */
+  }
+  
+  /* Styling Card di Aside */
+  .card {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .card .logo {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  nav .search-bar {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  nav .search-bar input {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  
